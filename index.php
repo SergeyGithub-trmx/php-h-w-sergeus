@@ -29,5 +29,22 @@ $users = [
 ];
 
 print('<pre>');
-print_r($users);
+
+function getUser():array {
+    return [       
+        'name' => 'Denis',
+        'surname' => 'Popov',
+        'age' => 15
+    ];
+};
+
+print_r(getUser());
+
+$usersList = [];
+
+while (count($usersList) <= 4) {
+    $usersList[] = getUser();
+};
+print_r($usersList);
+
 print('</pre>');
