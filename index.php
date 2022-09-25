@@ -37,7 +37,9 @@ function getUser()
     ];
 }
 
+print('<pre>');
 print_r(getUser());
+print('</pre>');
 
 function getUsers()
 {
