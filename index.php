@@ -32,6 +32,7 @@ print('<pre>');
 print_r($users);
 print('</pre>');
 
+
 function getUser()
 {
     return [       
@@ -51,9 +52,9 @@ function getUsers()
     while (count($usersList) <= 4) {
         array_push($usersList, getUser());
     }
-    return $getUsers;
+    return $usersList;
 }
 
 print('<pre>');
-print_r($usersList);
+print_r(getUsers());
 print('</pre>');
