@@ -28,11 +28,6 @@ $users = [
     ]
 ];
 
-print('<pre>');
-print_r($users);
-print('</pre>');
-
-
 function getUser()
 {
     return [       
