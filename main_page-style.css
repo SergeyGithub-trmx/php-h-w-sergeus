@@ -29,8 +29,6 @@
     src: url("fonts/RobotoMono-Regular.ttf") format("ttf");
 }
 
-
-
 body {
     display: flex;
     flex-direction: column;
@@ -38,7 +36,7 @@ body {
     margin: 0;
     height: 100vh;
     font-family: "Aller";
-    background-color: rgb(225, 225, 225);
+    background-image: linear-gradient(180deg, rgb(130, 130, 130), rgb(190, 190, 190));
     overflow: hidden;
 }
 
@@ -59,13 +57,45 @@ header {
     transition: all .4s;
 }
 
+.projects-container {
+    position: absolute;
+    background-image: linear-gradient(0, rgb(160, 255, 239), rgb(239, 185, 255));
+    align-self: flex-start;
+    width: 250px;
+    height: 100%;
+    border-right: 2px solid;
+    margin-top: 53px;
+}
+
+.tasks-container {
+    position: absolute;
+    background-image: linear-gradient(180deg, rgb(160, 255, 223), rgb(212, 185, 255));
+    align-self: flex-end;
+    width: 250px;
+    height: 100%;
+    border-left: 2px solid;
+    margin-top: 53px;
+}
+
+.projects-container p {
+    font-family: Arial;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.tasks-container p {
+    font-family: Arial;
+    font-size: 20px;
+    font-weight: bold;
+}
+
 h1 {
     font-size: 30pt;
     user-select: none;
     text-shadow:
         1px 1px white,
         2px 2px rgb(110, 110, 110);
-    color: #111;
+    color: #222;
     transition: all 0.4s;
 }
 
@@ -116,7 +146,6 @@ h1 {
 p {
     font-family: "Ubuntu";
     font-size: 28pt;
-    color: #222;
     margin: 15px 0 0 20px;
 }
 
