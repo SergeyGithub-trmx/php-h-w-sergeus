@@ -24,8 +24,6 @@
     src: url("fonts/RobotoMono-Regular.ttf") format("ttf");
 }
 
-
-
 body {
     display: flex;
     flex-direction: column;
@@ -33,7 +31,7 @@ body {
     margin: 0;
     height: 100vh;
     font-family: "Aller";
-    background-color: rgb(225, 225, 225);
+    background-color: rgb(200, 200, 200);
     overflow: hidden;
 }
 
