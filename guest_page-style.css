@@ -1,27 +1,27 @@
 @font-face {
     font-family: "Aller";
-    src: url("fonts/Aller/AllerDisplay_Std_Rg.ttf") format("ttf"),
-    url("fonts/Aller/Aller_Std_Rg.ttf") format("ttf");
+    src: url("fonts/AllerDisplay_Std_Rg.ttf") format("ttf"),
+    url("fonts/Aller_Std_Rg.ttf") format("ttf");
 }
 
 @font-face {
     font-family: "Lato";
-    src: url("fonts/Lato/Lato-Regular.ttf") format("ttf");
+    src: url("fonts/Lato-Regular.ttf") format("ttf");
 }
 
 @font-face {
-    font-family: "Pakenham";
-    src: url("fonts/Pakenham/pakenham-rg.otf") format("otf");
+    font-family: "Ubuntu";
+    src: url("fonts/Ubuntu-Regular.ttf") format("ttf");
 }
 
 @font-face {
     font-family: "JetBrains Mono";
-    src: url("fonts/JetBrains_Mono/static/JetBrainsMono-Regular.ttf") format("ttf");
+    src: url("fonts/JetBrainsMono-Regular.ttf") format("ttf");
 }
 
 @font-face {
     font-family: "Roboto Mono";
-    src: url("fonts/Roboto_Mono/static/RobotoMono-Regular.ttf") format("ttf");
+    src: url("fonts/RobotoMono-Regular.ttf") format("ttf");
 }
 
 
@@ -106,10 +106,10 @@ h1 {
 }
 
 p {
-    font-family: "Pakenham";
+    font-family: "Ubuntu";
     font-size: 28pt;
     color: #222;
-    margin: 25px 0 0 20px;
+    margin: 35px 0 0 20px;
 }
 
 .manager-desc {
@@ -122,6 +122,6 @@ p {
     user-select: none;
     font-family: "Roboto Mono";
     font-size: 22px;
-    margin-top: 100px;
+    margin-top: 95px;
     text-decoration: underline;
 }
