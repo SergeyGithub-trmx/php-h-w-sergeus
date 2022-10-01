@@ -20,10 +20,11 @@
             <p>
                 Your projects:
             </p>
+            <input placeholder="Search projects" id="searching-projects">
         </div>
 
         <div class="main-container">
-            <img src="C:\Users\Серёга\Desktop\homework-3\pictures\task-list.png" width="300px" height="300px">
+            <img src="pictures/task-list.png" width="300px" height="300px">
             <div class="manager-info">
                 <p>
                     Your tasks are always under control! <br>
@@ -36,6 +37,20 @@
             <p>
                 Your tasks:
             </p>
+            <input placeholder="Search tasks" id="searching-tasks">
+
+            <p id="tasks-filter">Filter</p>
+
+            <div class="tasks-filter">
+                <input type="radio" id="all-tasks" name="task-filter-element" value="all-tasks">
+                <label for="all-tasks">All tasks</label>
+                <input type="radio" id="today-tasks" name="task-filter-element" value="today-tasks">
+                <label for="today-tasks">For today</label>
+                <input type="radio" id="tomorrow-tasks" name="task-filter-element" value="tomorrow-tasks">
+                <label for="tomorrow-tasks">For tomorrow</label>
+                <input type="radio" id="expired-tasks" name="task-filter-element" value="expired-tasks">
+                <label for="expired-tasks">Expired</label>
+            </div>
         </div>
 
         <p class="tostart">
