@@ -1,0 +1,54 @@
+SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
+START TRANSACTION;
+SET time_zone = "+00:00";
+
+CREATE DATABASE `schema`;
+USE `schema`;
+
+CREATE TABLE `project` (
+  `ID` int(10) UNSIGNED ZEROFILL NOT NULL,
+  `name` varchar(255) NOT NULL,
+  `create_dt` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP,
+  `update_dt` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+
+CREATE TABLE `task` (
+  `ID` int(10) UNSIGNED ZEROFILL NOT NULL,
+  `name` varchar(255) NOT NULL,
+  `create_dt` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP,
+  `update_dt` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+
+CREATE TABLE `task_file` (
+  `ID` int(10) UNSIGNED ZEROFILL NOT NULL,
+  `task_path` varchar(64) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+
+CREATE TABLE `user` (
+  `ID` int(10) UNSIGNED NOT NULL,
+  `login` varchar(128) NOT NULL,
+  `email` varchar(128) NOT NULL,
+  `password_hash` varchar(255) NOT NULL,
+  `dt_add` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP,
+  `avatar_path` varchar(64) DEFAULT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+
+ALTER TABLE `project`
+  ADD PRIMARY KEY (`ID`);
+
+ALTER TABLE `task`
+  ADD PRIMARY KEY (`ID`);
+
+ALTER TABLE `user`
+  ADD PRIMARY KEY (`ID`),
+  ADD UNIQUE KEY `email` (`email`);
+
+ALTER TABLE `project`
+  MODIFY `ID` int(10) UNSIGNED ZEROFILL NOT NULL AUTO_INCREMENT;
+
+ALTER TABLE `task`
+  MODIFY `ID` int(10) UNSIGNED ZEROFILL NOT NULL AUTO_INCREMENT;
+
+ALTER TABLE `user`
+  MODIFY `ID` int(10) UNSIGNED NOT NULL AUTO_INCREMENT;
+COMMIT;
