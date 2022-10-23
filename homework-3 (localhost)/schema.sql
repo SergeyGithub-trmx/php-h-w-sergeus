@@ -10,19 +10,19 @@ CREATE TABLE `project` (
   `name` varchar(255) NOT NULL,
   `create_dt` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP,
   `update_dt` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP
-) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
 CREATE TABLE `task` (
   `ID` int(10) UNSIGNED ZEROFILL NOT NULL,
   `name` varchar(255) NOT NULL,
   `create_dt` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP,
   `update_dt` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP
-) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
 CREATE TABLE `task_file` (
   `ID` int(10) UNSIGNED ZEROFILL NOT NULL,
   `task_path` varchar(64) NOT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
 CREATE TABLE `user` (
   `ID` int(10) UNSIGNED NOT NULL,
@@ -31,7 +31,7 @@ CREATE TABLE `user` (
   `password_hash` varchar(255) NOT NULL,
   `dt_add` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP,
   `avatar_path` varchar(64) DEFAULT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
 ALTER TABLE `project`
   ADD PRIMARY KEY (`ID`);
